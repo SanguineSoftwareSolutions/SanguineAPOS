@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        android:background="@drawable/edittextstyle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left|center"
+            android:text="Item Name"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtItemName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="left|center"
+            android:text=""
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:background="@drawable/edittextstyle">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="80dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="40dp"
+            android:numColumns="4"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:id="@+id/gridviewModifierGroup"
+            android:textSize="@dimen/txt3"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCustomerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="horizontal">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="80dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="40dp"
+            android:numColumns="4"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:id="@+id/gridviewTDHItem"
+            android:textSize="@dimen/txt3"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="Min Limit"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtMinLimit"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text=""
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="Max Limit"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtMaxLimit"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text=""
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="Done" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="left|center"
+            android:text=""
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="Close" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <TableLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:id="@+id/txtMenuName"
+                        android:gravity="left"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MenuName"
+                        />
+
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtMenuPosName"
+                        android:gravity="left"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PosName"
+                        />
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtQty"
+                        android:gravity="left"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qty"
+
+
+                        />
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtGrandTotal"
+                        android:gravity="left"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amt"/>
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtMenuSubTotal"
+                        android:gravity="left"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SubTotal"
+                        />
+
+
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtMenuDis"
+                        android:gravity="left"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dis"
+
+
+                        />
+
+
+                    <TextView
+                        android:textSize="@dimen/txt3"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txtMenuSalesPer"
+                        android:gravity="left"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sale(%)"
+
+
+                        />
+
+
+
+
+
+
+
+
+
+                </TableRow>
+                <View
+
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/grid_line" />
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
+

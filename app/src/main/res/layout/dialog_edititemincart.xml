@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_clsitemdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+  <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_close"/>
+
+    //menu name text
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelectedMenu"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/btnClose"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <!--        android:layout_below="@+id/llMenuImage" />-->
+    //menu detail
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelectedMenuDetail"
+        android:layout_below="@+id/txtSelectedMenu"
+        android:textSize="10sp"
+        android:text=""
+        android:paddingBottom="0.7dp"
+        android:textColor="#b1acac"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSelectedMenuDetail"
+        android:layout_weight="10"
+        android:id="@+id/space1"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/llItemPrice"
+        android:layout_weight=".90"
+        android:id="@+id/space2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:id="@+id/llItemPrice"
+        android:layout_below="@+id/txtSelectedMenuDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtItemPrice"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:gravity="left"
+            android:text="Item Price"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtItemPrice"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:text="0"
+            android:id="@+id/txtShowItemPrice"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/llQuantity"
+        android:layout_below="@+id/llItemPrice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/txtQuantity"
+            android:text="Quantity"
+            android:textColor="#000000"
+            android:layout_weight="2.35" />
+    </LinearLayout>
+
+
+    //total
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/llTotal"
+        android:layout_below="@+id/llIncrDecr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignRight="@+id/llItemPrice"
+        android:layout_alignEnd="@+id/llItemPrice">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotal"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:text="Total"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:text=""/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="0"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:id="@+id/txtTotalPrice"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1.77" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_edittext"
+        android:id="@+id/llIncrDecr"
+        android:layout_below="@+id/llQuantity"
+        android:layout_toRightOf="@+id/txtSelectedMenuDetail"
+        android:layout_toEndOf="@+id/txtSelectedMenuDetail">
+
+        <ImageButton
+            android:id="@+id/btnQuantityDecrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#f44336"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_minus"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#faf9f9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="10sp"
+            android:id="@+id/txtShowQuantity" />
+        <ImageButton
+            android:id="@+id/btnQuantityIncrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#4CAF50"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_plus"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/llTotal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:id="@+id/btnAddToCart"
+            android:text="Add"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

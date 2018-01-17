@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_list_row_reprint_doc"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:id="@+id/txt_Mobile_No"
+            style="@style/list_title_textview"
+            android:text="Mob No"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:id="@+id/txt_Cust_Name"
+            style="@style/list_title_textview"
+            android:text="Customer "
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/txt_table"
+            style="@style/list_title_textview"
+            android:text="Table"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:id="@+id/txt_Pax"
+            style="@style/list_title_textview"
+            android:text="Pax"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txt_Date"
+            style="@style/list_title_textview"
+            android:text="Date"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/txt_Time"
+            style="@style/list_title_textview"
+            android:text="Time"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:id="@+id/txt_Comments"
+            style="@style/list_title_textview"
+            android:text="Comments"
+            android:textSize="@dimen/txt3"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>
+

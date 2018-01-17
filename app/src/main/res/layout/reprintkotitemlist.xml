@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_list_row_void_kot"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_kot_item_name"
+            style="@style/list_title_textview"
+            android:text="Soups"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_kot_waiter_Name"
+            style="@style/list_title_textview"
+            android:text="table"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_kot_Table_Name"
+            style="@style/list_title_textview"
+            android:text="waiter"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/tv_reprint_kot_User_Name"
+            style="@style/list_title_textview"
+            android:text="user"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/tv_reprint_kot_items_list_amount"
+            style="@style/list_title_textview"
+            android:text="100 Rs"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_kot_pos_name"
+            style="@style/list_title_textview"
+            android:text="POSName"
+            android:textSize="@dimen/txt3"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>
+

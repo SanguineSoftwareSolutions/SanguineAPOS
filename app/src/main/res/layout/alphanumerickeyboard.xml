@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/xMLayout"
+    android:background="#ffffff" android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="1"
+            android:id="@+id/xOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="1"
+            android:textSize="@dimen/txt3"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="2"
+            android:text="2"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xThree"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:tag="3"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="4"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="5"
+            android:text="5"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xSix"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" android:tag="6"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="7"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="8"
+            android:text="8"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xNine"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9" android:tag="9"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="0"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="6sp"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="back"
+            android:text="back"
+            android:layout_gravity="left" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="Q"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xW"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:tag="W"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="E"
+            android:text="E"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="R"
+            android:text="R"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="T"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="Y"
+            android:text="Y"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="U"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xI"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I" android:tag="I"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="O"
+            android:text="O"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xP"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P" android:tag="P"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xBkSlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="\"
+            android:layout_gravity="left" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:baselineAligned="true"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="5sp"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xBtnCaps"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caps" android:tag="lower"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="1"
+            android:id="@+id/xA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="A"
+            android:textSize="@dimen/txt3"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xS"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S" android:tag="S"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="D"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xF"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F" android:tag="F"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="G"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="H"
+            android:text="H"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="J"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="K"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="L"
+            android:text="L"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xColon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag=":"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="5sp"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="Enter"
+            android:text="Enter"
+            android:layout_gravity="left" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:baselineAligned="true"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xZ"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z" android:tag="Z"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="X"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xC"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:tag="C"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="V"
+            android:text="V"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="B"
+            android:text="B"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="N"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xM"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:tag="M"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+
+
+
+
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="6sp"
+            android:layout_weight="1"
+            android:id="@+id/xSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|____| "
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag=""
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="."
+            android:layout_gravity="left" />
+
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt3"
+            android:layout_weight="1"
+            android:id="@+id/xFwdSlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="/"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="6sp"
+            android:layout_weight="1"
+            android:id="@+id/xClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="Clear"
+            android:layout_gravity="left" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

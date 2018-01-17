@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_list_row_void_kot"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <com.example.apos.views.CustomSearchView
+            android:id="@+id/edtSearchCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strCustomerCode"
+            style="@style/list_title_textview"
+            android:text="Customer Code"
+            android:textSize="@dimen/txt4"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strCustomerName"
+            style="@style/list_title_textview"
+            android:text="Customer Name"
+            android:textSize="@dimen/txt4"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strMobileNo"
+            style="@style/list_title_textview"
+            android:text="Mobile No"
+            android:textSize="@dimen/txt4"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:numColumns="1"
+            android:layout_margin="3dp"
+            android:id="@+id/gvcustomersearchdialoglistview"
+            android:textSize="@dimen/txt1"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

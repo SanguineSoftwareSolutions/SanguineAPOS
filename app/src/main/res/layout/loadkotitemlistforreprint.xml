@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:layout_margin="1dp"
+    android:orientation="vertical">
+
+
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:padding="5dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="left"
+                android:id="@+id/tv_list_row_reprint_kot_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                style="@style/list_title_textview"
+                android:text="ITEMS"
+                android:textSize="@dimen/txt3"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:id="@+id/txt_list_row_reprint_kot_qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                style="@style/list_title_textview"
+                android:text="QTY"
+                android:textSize="@dimen/txt3"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:id="@+id/tv_list_row_reprint_kot_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                style="@style/list_title_textview"
+                android:text="@string/amt"
+                android:textSize="@dimen/txt3"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/listReprintKotSelectedItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:clickable="false"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+
+        <Button
+            android:id="@+id/btnReprintKotPrint"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button"
+            android:text="PRINT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt3" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+
+        <TextView
+            android:id="@+id/edt_reprint_kot_total_order_amount"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="right"
+            android:inputType="number|numberSigned"
+            android:padding="5dp"
+            android:text="0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

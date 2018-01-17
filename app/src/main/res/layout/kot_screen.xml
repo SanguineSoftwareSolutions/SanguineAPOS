@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/vgContent"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<com.example.apos.views.CustomSearchView
+			android:id="@+id/TableCustomSearchView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+
+		<GridView
+			android:id="@+id/kottable_gridview"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:columnWidth="80dp"
+			android:gravity="center"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:textSize="@dimen/txt3"/>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/vgProgress"
+		android:layout_width="match_parent"
+		android:visibility="gone"
+		android:layout_height="match_parent"
+		android:gravity="center">
+
+		<com.example.apos.views.ProgressBarCircularIndeterminate
+			android:id="@+id/vgProgressBar"
+			android:layout_width="36dp"
+			android:layout_height="36dp"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="12dp"
+			android:layout_marginRight="12dp"
+			android:background="@color/theme_color"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/vgProgressBar"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="12dp"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:text="Loading..."
+			android:textColor="@color/theme_color"
+			android:textSize="14sp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

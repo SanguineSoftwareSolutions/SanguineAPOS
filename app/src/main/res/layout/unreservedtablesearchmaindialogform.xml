@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_list_row_void_kot"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+
+        <!--<EditText
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:background="@drawable/oval_edittext"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/edtSearchTable"
+            style="@style/list_title_textview"
+            android:text=""
+            android:textSize="@dimen/txt3"/>-->
+
+        <com.example.apos.views.CustomSearchView
+            android:id="@+id/edtSearchTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strTableNo"
+            style="@style/list_title_textview"
+            android:text="Table No"
+            android:textSize="@dimen/txt4"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strTableName"
+            style="@style/list_title_textview"
+            android:text="Table Name"
+            android:textSize="@dimen/txt4"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/strTableStatus"
+            style="@style/list_title_textview"
+            android:text="Table Status"
+            android:textSize="@dimen/txt4"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="1"
+            android:layout_margin="3dp"
+            android:id="@+id/gvtablesearchdialoglistview"
+            android:textSize="@dimen/txt1"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

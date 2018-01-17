@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/xMLayout"
+    android:background="#ffffff" android:layout_height="wrap_content"
+    android:focusable="true"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/tvHeaderLableNumberKeyboard"
+            android:text="Enter Pax No"
+            android:textSize="@dimen/txt2" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtGetNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/oval_edittext"
+            android:gravity="center"
+            android:textSize="@dimen/txt3"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+</LinearLayout>

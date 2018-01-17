@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:padding="3dp"
+         android:orientation="horizontal"
+         android:weightSum="5">
+
+
+          <TextView
+              android:textStyle="bold"
+              android:gravity="left"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/tv_void_kot_item_name"
+              style="@style/list_title_textview"
+              android:text="KotNo"
+              android:textSize="@dimen/txt3"/>
+
+
+          <TextView
+              android:textStyle="bold"
+              android:gravity="left"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/tv_void_kot_waiter_Name"
+              style="@style/list_title_textview"
+              android:text="Waiter"
+              android:textSize="@dimen/txt3"/>
+
+
+          <TextView
+              android:textStyle="bold"
+              android:gravity="left"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/tv_void_kot_Table_Name"
+              style="@style/list_title_textview"
+              android:text="Table"
+              android:textSize="@dimen/txt3"/>
+
+          <TextView
+              android:textStyle="bold"
+              android:gravity="left"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/tv_void_kot_User_Name"
+              style="@style/list_title_textview"
+              android:text="user"
+              android:textSize="@dimen/txt3"/>
+
+
+
+
+          <TextView
+              android:textStyle="bold"
+              android:gravity="right"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/tv_void_kot_items_list_amount"
+              style="@style/list_title_textview"
+              android:text="Total"
+              android:textSize="@dimen/txt3"/>
+     </LinearLayout>
+
+
+     <View
+
+         android:id="@+id/divider"
+         android:layout_width="match_parent"
+         android:layout_height="3dp"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/grid_line" />
+
+     <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="1"
+        android:id="@+id/gvkotloadedlist"
+        android:textSize="@dimen/txt3"
+        />
+
+</LinearLayout>

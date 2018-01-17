@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/txtMemberCode"
+            android:text="Enter Member Code"
+            android:textSize="@dimen/txt3"/>
+
+
+
+        <EditText
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:background="@drawable/oval_edittext"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:id="@+id/edtMemberCode"
+            style="@style/list_title_textview"
+            android:text=""
+            android:textSize="@dimen/txt3"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:background="@drawable/bluebutton"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnMemberDialogSubmit"
+            style="@style/list_title_textview"
+            android:text="Submit"
+            android:textSize="@dimen/txt3"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bluebutton"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnMemberDialogSReset"
+            style="@style/list_title_textview"
+            android:text="Reset"
+            android:textSize="@dimen/txt3"/>
+
+
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bluebutton"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnMemberDialogClose"
+            style="@style/list_title_textview"
+            android:text="Close"
+            android:textSize="@dimen/txt3"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+
+
+</LinearLayout>
+

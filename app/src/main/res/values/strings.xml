@@ -1,0 +1,164 @@
+<resources>
+	<string name="app_name">APOS</string>
+
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<color name="black">#000000</color>
+
+	<color name="purple">#CCCCFF</color>
+	<color name="gray">#CCCCCC</color>
+	<color name="blue">#6699FF</color>
+
+	<!-- Start clsLoginActivity-->
+	<string name="hint_userid">UserID</string>
+	<string name="hint_password">Password</string>
+	<string name="hint_name">Fullname</string>
+	<string name="btn_login">LOGIN</string>
+	<string name="btn_reset">RESET</string>
+	<string name="btn_exit">EXIT</string>
+	<string name="btn_config_file">CONFIG FILE</string>
+	<string name="name">Fullname</string>
+	<string name="billno">BillNo</string>
+	<string name="billdate">BillDate</string>
+	<string name="tablename">TableName</string>
+	<string name="subtotal">Total:</string>
+	<string name="grandtotal">G.Total</string>
+	<string name="discount">Dis:</string>
+	<string name="payMode">PayMode:</string>
+	<string name="balance">Balance:</string>
+	<string name="tax">Tax:</string>
+	<string name="cashcard">CASHCARD</string>
+	<string name="member">MEMBER</string>
+
+
+	<!-- End clsLoginActivity-->
+
+	<string-array name="poplist">
+		<item>Paneer Tikka</item>
+		<item>Burger</item>
+		<item>Chicken</item>
+		<item>Icecream</item>
+	</string-array>
+
+	<string-array name="menulist">
+		<item>Nonveg</item>
+		<item>Veg</item>
+		<item>Colddrinks</item>
+	</string-array>
+
+
+	<string-array name="itemlist">
+		<item>Chicken</item>
+		<item>Egg</item>
+		<item>Paneer Tikka</item>
+		<item>Veg Kolhapuri</item>
+		<item>Coldcofee</item>
+		<item>Icecream</item>
+	</string-array>
+	<color name="header_background_sky_blue">#45a4ee</color>
+	<string name="title_activity_cls_order_review">clsOrderReviewActivity</string>
+
+
+	<!-- Direct Bill Screen strings -->
+	<string name="back">BACK</string>
+	<string name="menu">MENU</string>
+	<string name="items">ITEMS</string>
+	<string name="settle">SETTLE</string>
+
+	<string name="bill">Bill : </string>
+	<string name="date">Date : </string>
+
+	<string name="del">DEL</string>
+	<string name="desc">DESC</string>
+	<string name="qty">QTY</string>
+	<string name="amt">AMT</string>
+	<string name="add">ADD</string>
+	<string name="item">ITEM</string>
+
+	<string name="total">TOTAL</string>
+	<string name="all_items">All ITEMS</string>
+
+
+	<!--Item Type-->
+	<string-array name="itemType_arrays">
+		<item>Food</item>
+		<item>Liquor</item>
+		<item>Retail</item>
+	</string-array>
+
+
+	<!--Tax Indicator Item-->
+	<string-array name="taxIndicator_array">
+		<item> </item>
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+	</string-array>
+
+	<item name="grid_rows" type="integer">2</item>
+
+
+	<!-- LOGIN SCREEN -->
+
+	<string name="hint_text_username">User Id</string>
+	<string name="hint_text_password">Password</string>
+	<string name="button_text_login">Login</string>
+	<string name="button_text_dialog"><u>Dialog</u></string>
+	<string name="button_text_scan"><u>Scan</u></string>
+	<string name="header_text_apos">APOS</string>
+	<string name="header_text_login">Login</string>
+	<string name="header_text_date">Date and Time</string>
+	<string name="text_or">OR</string>
+
+
+	<!-- SERVER CONFIGURATION -->
+
+	<string name="hint_server_name">Server Name</string>
+	<string name="hint_server_ip">Server IP</string>
+	<string name="text_server_configuration">Configuration</string>
+	<string name="button_submit">Configure</string>
+	<string name="button_clear">Clear</string>
+
+
+	<string name="base_url">http://google.com/</string>
+	<string name="response_msg_common">We apologize for the inconvenience. Please try again later.</string>
+
+	<string name="text_loading">Loading...</string>
+	<string name="no_internet_connection">No Internet Connection</string>
+	<string name="setup_your_server_settings">Please check your server configuration</string>
+	<string name="search_hint">Search</string>
+	<string name="main_menu">Main Menu</string>
+	<string name="date_time">Date and Time</string>
+
+	<string name="str_total_amount">Total</string>
+
+
+	<!--Reservation Screen-->
+	<string name="Reservation_No">Reservation No</string>
+	<string name="Reservation_Mob">Phone No</string>
+	<string name="Reservation_Pax">PAX No</string>
+	<string name="Reservation_CustomerName">Customer Name</string>
+</resources>

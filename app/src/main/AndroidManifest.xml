@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.apos.activity"
+          android:installLocation="auto">
+
+
+	<supports-screens
+		android:anyDensity="true"
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:resizeable="true"
+		android:smallScreens="true"
+		android:xlargeScreens="true"/>
+
+
+	<!--    PERMISSIONS    -->
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+	<!--    END OF PERMISSIONS    -->
+
+	<uses-feature
+		android:name="android.hardware.bluetooth_le"
+		android:required="false"/>
+
+
+	<application
+		android:name="com.example.apos.App"
+		android:allowBackup="true"
+		android:icon="@mipmap/apos"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme">
+
+
+		<!--    ACTIVITIES   -->
+
+		<activity
+			android:name=".clsLoginActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:theme="@style/BaseTheme"
+			android:windowSoftInputMode="adjustResize|stateHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".clsDirectBill"
+			android:windowSoftInputMode="adjustPan"
+			android:label="@string/app_name"/>
+
+		<activity
+			android:name=".clsMakeBillScreen"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsMainMenu"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"
+			android:label="@string/app_name"/>
+
+		<activity
+			android:name=".clsPOSSelection"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"/>
+
+
+		<activity
+			android:name=".clsCounterDtl"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"/>
+
+		<activity
+			android:name=".clsKotScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsVoidKotScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+			android:name=".clsSalesReportScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsReprintKotScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsReprintDocuments"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsBillList"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsBillSettlement"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsViewTableStatusScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsNCKOTScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsTakeAwayScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsReprintRechargeSlip"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsReprintRefundSlip"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsTableReservation"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsReservation"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsShowReservationList"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsCallingNumberDialog"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsPieChartActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsPOSSalesReportScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustPan"/>
+
+		<activity
+			android:name=".clsCustomerOrderScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsNonAvailableItemsScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsMiniMakeKotScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsDayEndScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsKDSScreenFotKOT"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsCostCenterScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsWaiterSelectionScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".clsKPSScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize"/>
+
+
+		<activity
+			android:name=".TempActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustResize">
+		</activity>
+
+
+		<!--    END OF ACTIVITIES   -->
+
+
+		<!--    RECEIVERS   -->
+
+		<receiver android:name="com.example.apos.util.clsBroadcastCall">
+			<intent-filter>
+				<action android:name="android.intent.action.PHONE_STATE"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+			</intent-filter>
+		</receiver>
+
+		<!--    END OF RECEIVERS   -->
+
+	</application>
+</manifest>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/xMLayout"
+    android:background="#ffffff" android:layout_height="wrap_content"
+    android:focusable="true"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="1"
+            android:id="@+id/xOne"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="1"
+            android:textSize="@dimen/txt2"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xTwo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="2"
+            android:text="2"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xThree"
+            android:layout_gravity="left"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:tag="3"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:baselineAligned="true"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:id="@+id/xFour"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="4"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xFive"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="5"
+            android:text="5"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xSix"
+            android:layout_gravity="left"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="6" android:tag="6"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:fitsSystemWindows="true" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:baselineAligned="true"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:id="@+id/xSeven"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="7"
+            android:layout_gravity="left" />
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xEight"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="8"
+            android:text="8"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/xNine"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:fitsSystemWindows="true"
+            android:soundEffectsEnabled="true"
+            android:tag="9"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:id="@+id/xClear"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="C"
+            android:layout_gravity="left" />
+
+
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:id="@+id/xZero"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="0"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xBack"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="back"
+            android:text="Back"
+            android:layout_gravity="left" />
+
+        <Button
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt2"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/xEnter"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:tag="Enter"
+            android:text="Enter"
+            android:layout_gravity="left" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

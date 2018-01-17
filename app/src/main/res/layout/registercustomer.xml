@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgViewCancelButton"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_gravity="top|right"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="#000"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.9"
+            android:layout_margin="2dp"
+            android:padding="1dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearMobilePanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:padding="1dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="left"
+                    android:layout_margin="2dp"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:layout_weight="0.96"
+                        android:text="Mobile No"
+                        android:id="@+id/txtMobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_margin="2dp"
+                    android:padding="1dp">
+
+                    <EditText
+
+                        android:background="@drawable/bg_edit_text"
+                        android:textSize="10sp"
+                        android:inputType="phone"
+                        android:layout_weight="1"
+                        android:maxLength="10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/edtMobileNo" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:padding="1dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="left"
+                    android:layout_margin="2dp"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:text="Customer Name"
+                        android:id="@+id/txtCustomerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_margin="2dp"
+                    android:padding="1dp">
+
+                    <EditText
+                        android:background="@drawable/bg_edit_text"
+                        android:textSize="10sp"
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/edtCustomerName" >
+                    </EditText>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="6"
+                    android:gravity="left"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Address"
+                        android:textSize="13sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <EditText
+                        android:id="@+id/edtCustomerAddress"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:background="@drawable/bg_edit_text"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearButtonPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_margin="2dp"
+            android:padding="1dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:padding="1dp">
+
+                <Button
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:text="SAVE"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btnSaveCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:padding="1dp">
+
+                <Button
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:text="RESET"
+                    android:id="@+id/btnResetCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

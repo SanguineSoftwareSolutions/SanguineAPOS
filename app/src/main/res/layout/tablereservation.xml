@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:clipToPadding="false"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/edtReservationNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="@string/Reservation_No"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:phoneNumber="true"
+                        android:textColorHint="#a6a3a3"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/rl_res_mob"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                     <EditText
+                        android:id="@+id/edtPhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="@string/Reservation_Mob"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textColorHint="#a6a3a3"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:textSize="12sp"
+                        android:layout_weight="0.55" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingEnd="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_alignTop="@+id/rl_res_mob"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+                        <Button
+                            android:id="@+id/btnCheckPhoneNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:text="Check"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp">
+
+                    <EditText
+                        android:id="@+id/edtCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="@string/Reservation_CustomerName"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textColorHint="#a6a3a3"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/rl_res_pax"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/edtPax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edit_text"
+                            android:hint="@string/Reservation_Pax"
+                            android:maxLines="1"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColorHint="#a6a3a3"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:imeOptions="actionDone"
+                            android:textSize="12sp"
+                            android:layout_weight="0.55" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingEnd="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_alignTop="@+id/rl_res_pax"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+                        <Button
+                            android:id="@+id/btnAssignTable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:text="Assign Table"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/rl_res_Pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_pos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="POS"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                             />
+
+                        <Spinner
+                            android:id="@+id/reservation_spinnerPos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:padding="12dp"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:layout_alignRight="@+id/rl_res_Pos"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_Smoke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="Smoking "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                             />
+
+                        <Spinner
+                            android:id="@+id/reservation_spinnerSmoke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:padding="12dp"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp">
+
+                    <EditText
+                        android:id="@+id/edtComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="Special Information "
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="#a6a3a3"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="7dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="0.5dp">
+                            <ImageView
+                                android:id="@+id/imgViewCaledar"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:contentDescription="@null"
+                                android:src="@mipmap/imgreservation_calendar" />
+
+                            <TextView
+                                android:id="@+id/edtSelectedDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edit_text"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:padding="12dp"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="0.5dp">
+
+                            <ImageView
+                                android:id="@+id/imgViewTime"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:contentDescription="@null"
+                                android:src="@mipmap/imgreser_time" />
+
+                            <TextView
+                                android:id="@+id/edtSelectedTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edit_text"
+                                android:gravity="center_vertical"
+                                android:textColor="#000000"
+                                android:padding="12dp"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:padding="12dp">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_weight="1"
+                            android:textSize="@dimen/txt3"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button"
+                            android:id="@+id/btnAdd" />
+
+                        <Space
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/txt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reset"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button"
+                            android:id="@+id/btnReset" />
+
+                        <Space
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/txt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_button"
+                            android:id="@+id/btnCancel" />
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

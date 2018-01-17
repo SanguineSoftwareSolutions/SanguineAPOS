@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_list_row_reprint_doc"
+    android:background="@drawable/list_row_selector"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_doc_no"
+            style="@style/list_title_textview"
+            android:text="Doc No"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_Amount"
+            style="@style/list_title_textview"
+            android:text="Amount"
+            android:textSize="@dimen/txt3"/>
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_doc_slip_no"
+            style="@style/list_title_textview"
+            android:text="Slip No"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_reprint_Customer_Name"
+            style="@style/list_title_textview"
+            android:text="Customer Name"
+            android:textSize="@dimen/txt3"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>
+

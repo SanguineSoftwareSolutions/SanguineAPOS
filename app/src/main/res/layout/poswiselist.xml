@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/txtPOSName"
+            style="@style/list_title_textview"
+            android:text="posName"
+            android:textSize="@dimen/txt2"/>
+
+        <TextView
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/txtSaleAmt"
+            style="@style/list_title_textview"
+            android:text="amt"
+            android:textSize="@dimen/txt2"/>
+
+        <TextView
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/txtSalePer"
+            style="@style/list_title_textview"
+            android:text="%"
+            android:textSize="@dimen/txt2"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>
