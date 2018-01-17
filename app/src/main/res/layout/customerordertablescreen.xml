@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".080"
+        android:background="@drawable/edittextstyle"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/txtheading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="Table"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/txt2"
+            android:textStyle="bold"
+            android:layout_margin="1dp"/>
+
+        <TextView
+            android:id="@+id/txtTableName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text=""
+            android:maxLines="3"
+            android:textSize="@dimen/txt2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="1dp"/>
+
+        <TextView
+            android:layout_margin="1dp"
+            android:id="@+id/txtWaiterName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="left|center"
+            android:text=""
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_margin="1dp"
+            android:id="@+id/txtMenuName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="left|center"
+            android:text=""
+            android:maxLines="3"
+            android:textSize="@dimen/txt3"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight=".3"
+            android:background="@mipmap/ic_refreshmenu"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCustomerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="80dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:numColumns="5"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:id="@+id/kottable_gridview"
+            android:textSize="@dimen/txt3"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

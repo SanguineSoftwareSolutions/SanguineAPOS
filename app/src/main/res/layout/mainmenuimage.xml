@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/white"
+	android:gravity="center"
+	android:padding="8dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bg_main_menu"
+		android:padding="8dp">
+
+		<com.example.apos.views.SquareImageView
+			android:id="@+id/ivmainmenu"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@mipmap/imgmasters"/>
+	</RelativeLayout>
+</RelativeLayout><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+
+	android:background="@android:color/white"
+	android:gravity="center"
+	android:padding="8dp">
+
+	<com.example.apos.views.SquareView
+		android:id="@+id/vgContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:background="@drawable/bg_main_menu"
+		android:padding="8dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<com.example.apos.views.SquareImageView
+				android:id="@+id/ivmainmenu"
+				android:layout_width="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/imgmasters"/>
+		</RelativeLayout>
+	</com.example.apos.views.SquareView>
+</RelativeLayout>
+
+-->

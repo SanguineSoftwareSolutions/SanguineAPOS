@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list_row_make_bill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_row_selector"
+    android:padding="2dp"
+    android:layout_margin="2dp"
+    android:gravity="center">
+
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:id="@+id/tvSettleType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/list_title_textview"
+        android:text="SettleType"
+        android:textSize="@dimen/txt4"
+        />
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/tvSettleAmt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/list_title_textview"
+        android:text="SettleAmt"
+        android:textSize="@dimen/txt4"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+

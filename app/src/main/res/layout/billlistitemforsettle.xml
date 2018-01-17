@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/billListSelectedRow"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:weightSum="4"
+    >
+
+
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt3"
+        android:id="@+id/txtBillNo"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="BillNo"
+        android:padding="0.5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtBillDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0.5dp"
+        android:text="BillDate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt3" />
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt3"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtTableName"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="1dp"
+        android:text="TableName"
+        android:padding="0.5dp"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt3"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtBillAmt"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Amt"
+        android:padding="0.5dp"
+        />
+
+
+
+
+</LinearLayout>

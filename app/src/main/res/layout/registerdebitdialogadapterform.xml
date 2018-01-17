@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_tv_register_debit_dialog_adapter_cust_code"
+            style="@style/list_title_textview"
+            android:text="cust_code"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_register_debit_dialog_adapter_cust_name"
+            style="@style/list_title_textview"
+            android:text="cust_name"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_register_debit_dialog_adapter_mob_no"
+            style="@style/list_title_textview"
+            android:text="mob_no"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_register_debit_dialog_adapter_type"
+            style="@style/list_title_textview"
+            android:text="type"
+            android:textSize="@dimen/txt3"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>

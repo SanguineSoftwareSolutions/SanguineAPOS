@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="3dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/ll_grid_row_kot_menu_item">
+
+   <!-- <ImageView
+        android:textSize="@dimen/txt3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/imgmasters"
+        android:id="@+id/iv_grid_row_kot_menu_image" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_grid_row_kot_menu_item"
+            style="@style/list_title_textview"
+            android:text="Soups"
+            android:textSize="@dimen/txt3"/>
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        style="@style/list_title_textview"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/txt3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/tv_grid_row_kot_menu_item" />-->
+
+        </LinearLayout>
+
+        <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+</LinearLayout>

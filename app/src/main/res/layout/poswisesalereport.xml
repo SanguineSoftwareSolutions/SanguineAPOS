@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <TableLayout
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPOSName"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="POS Name"
+                        android:textSize="@dimen/txt2"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:id="@+id/txtSaleAmt"
+                    style="@style/list_title_textview"
+                    android:text="Sales Amount"
+                    android:textSize="@dimen/txt2"/>
+
+
+                <TextView
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    style="@style/list_title_textview"
+                    android:text="Sales(%)"
+                    android:textSize="@dimen/txt2"
+                    />
+                </LinearLayout>
+
+
+
+            </TableRow>
+        </TableLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grid_line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <GridView
+            android:textSize="@dimen/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="1"
+            android:layout_margin="3dp"
+            android:id="@+id/gvPOSWiseList"/>
+
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grid_line" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <TableLayout
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        style="@style/list_title_textview"
+                        android:text="Total Sale Amount:"
+                        android:textSize="@dimen/txt2"/>
+
+
+                    <TextView
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:textStyle="bold"
+                        android:id="@+id/txtTotalSale"
+                        style="@style/list_title_textview"
+                        android:text=""
+                        android:textSize="@dimen/txt2"/>
+
+
+                    <TextView
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        style="@style/list_title_textview"
+                        android:text=""
+                        android:textSize="@dimen/txt2"
+                        />
+                </LinearLayout>
+
+
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>

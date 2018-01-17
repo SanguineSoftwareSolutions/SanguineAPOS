@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:layout_margin="1dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TableLayout
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:stretchColumns="*">
+
+            <TableRow
+
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_make_bill_Table_Name"
+                        style="@style/list_title_textview"
+                        android:text="TABLE"
+                        android:textSize="@dimen/txt3"/>
+
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:id="@+id/tv_make_bill_item_name"
+                        style="@style/list_title_textview"
+                        android:text="Item"
+                        android:textSize="@dimen/txt3"/>
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_make_bill_qty"
+                        style="@style/list_title_textview"
+                        android:text="Qty"
+                        android:textSize="@dimen/txt3"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_make_bill_amt"
+                        style="@style/list_title_textview"
+                        android:text="Amt"
+                        android:textSize="@dimen/txt3"/>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="1dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/listmakebillselecteditems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:scrollbars="vertical"
+        android:clickable="false"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grid_line" />
+
+    <ListView
+        android:id="@+id/makeBillDiscList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:clickable="false" />
+
+
+    <ListView
+        android:id="@+id/makeBillTaxList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:clickable="false"
+        android:scrollbars="vertical" />
+
+
+
+
+    <LinearLayout
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnMakeBillback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textColor="@android:color/white"
+            android:text="@string/back"
+            android:textSize="@dimen/txt3"/>
+
+
+        <Button
+            android:id="@+id/btnMakeBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:text="MakeBill"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt3" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/edtMakeBillTotalAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="number|numberSigned"
+            android:textStyle="bold"
+            android:background="@drawable/oval_edittext"
+            android:editable="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:textSize="@dimen/txt3"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+

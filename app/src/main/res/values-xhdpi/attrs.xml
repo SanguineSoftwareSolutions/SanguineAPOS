@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--Custom views -->
+
+	<attr name="customTypeface" format="enum">
+		<enum name="Regular" value="1"/>
+		<enum name="Light" value="2"/>
+		<enum name="Bold" value="3"/>
+	</attr>
+
+	<declare-styleable name="Button">
+		<attr name="customTypeface"/>
+	</declare-styleable>
+
+	<declare-styleable name="EditText">
+		<attr name="customTypeface"/>
+	</declare-styleable>
+
+	<declare-styleable name="TextView">
+		<attr name="customTypeface"/>
+	</declare-styleable>
+
+
+</resources>

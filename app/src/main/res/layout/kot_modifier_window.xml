@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".2">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top">
+
+                    <TextView
+                        android:id="@+id/txtItemName"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/removeqty"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+
+                    <TextView
+                        android:id="@+id/txtQty"
+                        style="@style/list_title_textview"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/addqty"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/deleteitem"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:text="DELETE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1" />
+                    />
+
+                    <Button
+                        android:id="@+id/kotok"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:text="OK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnKotModifier"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:text="Modifier"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1" />
+                    />
+
+
+                    <Button
+                        android:id="@+id/btnKotFFOk"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:text="FreeFlowOk"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+
+                    <TextView
+
+                        android:id="@+id/txtffItemRate"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="left"
+                        android:text="Name:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3" />
+
+
+                    <EditText
+                        android:id="@+id/edtKotFFItemName"
+                        style="@style/list_title_textview"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+
+                    <TextView
+
+                        android:id="@+id/txtffItemName"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="left"
+                        android:text="Rate:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3" />
+
+
+                    <EditText
+
+                        android:id="@+id/edtKotFFItemRate"
+                        style="@style/list_title_textview"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt3" />
+
+                    <Button
+                        android:id="@+id/btnKotFFReset"
+                        style="@style/list_title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:text="RESET"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt3" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

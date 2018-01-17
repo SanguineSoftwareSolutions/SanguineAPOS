@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@color/header_background_sky_blue"
+        android:layout_margin="2dp"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_take_away_header_class_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            style="@style/header_textview"
+            android:text="APOS"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:id="@+id/tv_take_away_header_title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/header_textview"
+            android:text="Take Away"
+            android:textSize="@dimen/txt3"/>
+
+        <TextView
+            android:id="@+id/tv_take_away_header_timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/header_textview"
+            android:text="date"
+            android:textSize="@dimen/txt3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/border"
+            android:layout_margin="1dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtExternalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_total"
+                android:gravity="center"
+                android:hint="External Code"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/txt4"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/vgTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtExternalCode"
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    style="@style/list_title_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/items"
+                    android:textSize="12dp" />
+
+                <TextView
+                    style="@style/list_title_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/qty"
+                    android:textSize="12dp" />
+
+                <TextView
+                    style="@style/list_title_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/amt"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listtakeawayselecteditems"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:scrollbars="vertical"
+                android:clickable="false"/>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/btntakeawaySettle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/edt_take_away_total_order_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="number|numberSigned"
+                    android:background="@drawable/bg_total"
+                    android:editable="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <com.example.apos.util.clsSlidingTabLayout
+                android:id="@+id/tabs_take_away"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:background="@color/white"/>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_take_away"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

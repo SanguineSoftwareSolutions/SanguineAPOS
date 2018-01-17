@@ -1,0 +1,101 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+	</style>
+
+
+	<!--Application Theme-->
+	<style name="CustomAppTheme" parent="BaseTheme"/>
+
+	<!-- Base application theme -->
+	<style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:textCursorDrawable">@null</item>
+		<item name="android:windowBackground">@android:color/white</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:textColorPrimary">@android:color/white</item>
+		<item name="colorPrimary">@color/theme_color</item>
+		<item name="colorPrimaryDark">@color/light_black</item>
+		<item name="colorAccent">@color/white</item>
+	</style>
+
+	<style name="header_textview" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">5pt</item>
+		<item name="android:textColor">@android:color/background_light</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:padding">1dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+
+	<style name="My.Holo.Light.FullScreen" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:alertDialogTheme">@style/Base.Theme.AppCompat.Light.Dialog</item>
+	</style>
+
+
+	<style name="footer_button" parent="@android:style/TextAppearance">
+		<item name="android:textSize">8pt</item>
+		<item name="android:textColor">@android:color/background_light</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:padding">2dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:background">@color/bg_main</item>
+		<item name="android:layout_marginLeft">5dp</item>
+	</style>
+
+
+	<style name="title_textview" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">5pt</item>
+		<item name="android:textColor">@android:color/background_dark</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:padding">1dp</item>
+		<item name="android:gravity">left</item>
+	</style>
+
+	<style name="list_title_textview" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">5pt</item>
+		<item name="android:textColor">@android:color/background_dark</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:padding">1dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="progress_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/progress_dialog_background</item>
+		<item name="android:windowFrame">@drawable/progress_dialog_frame</item>
+	</style>
+
+	<style name="direct_bill_item_list_textview" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">5pt</item>
+		<item name="android:textColor">@android:color/background_light</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:padding">1dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+
+	<style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">@color/theme_color</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+
+
+	<style name="DialogBackground" parent="@android:style/Theme.Dialog">
+		<item name="android:background">#FFFFFF</item>
+	</style>
+
+	<style name="DialogAnimationSlide">
+		<item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+		<item name="android:windowExitAnimation">@android:anim/fade_out</item>
+	</style>
+</resources>

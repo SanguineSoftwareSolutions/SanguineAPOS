@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/searchLabelPanel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:background="@drawable/bg_gray_edittext_with_corner"
+		android:visibility="invisible">
+
+		<TextView
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:drawableLeft="@mipmap/ic_search_small_icon"
+			android:drawablePadding="8dp"
+			android:drawableStart="@mipmap/ic_search_small_icon"
+			android:gravity="center"
+			android:hint="@string/search_hint"
+			android:imeOptions="actionSearch"
+			android:inputType="text"
+			android:maxLines="1"
+			android:padding="12dp"
+			android:textColor="#777777"
+			android:textColorHint="#777777"
+			android:textSize="14sp"
+			android:visibility="visible"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/searchPanel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:background="@drawable/bg_gray_edittext_with_corner"
+		android:visibility="visible">
+
+		<EditText
+			android:id="@+id/etSearch"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/searchCancel"
+			android:layout_toStartOf="@+id/searchCancel"
+			android:background="@android:color/transparent"
+			android:drawableLeft="@mipmap/ic_search_small_icon"
+			android:drawablePadding="8dp"
+			android:drawableStart="@mipmap/ic_search_small_icon"
+			android:hint="@string/search_hint"
+			android:imeOptions="actionSearch"
+			android:inputType="text"
+			android:maxLines="1"
+			android:padding="12dp"
+			android:textColor="#777777"
+			android:textColorHint="#777777"
+			android:textCursorDrawable="@null"
+			android:textSize="14sp"
+			>
+			<requestFocus />
+		</EditText>
+
+		<android.support.v7.widget.AppCompatImageView
+			android:id="@+id/searchCancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="12dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginStart="8dp"
+			android:src="@mipmap/ic_cancel_on_search"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

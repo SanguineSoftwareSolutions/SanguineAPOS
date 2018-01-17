@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llShowCustoName"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtShowCustName"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Customer Name"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llShowCustoName"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/llmob">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text">
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Mobile No"
+                android:id="@+id/editTextMobileNumber"
+                android:maxLength="10">
+                <requestFocus/>
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llmob"
+        android:id="@+id/linearLayout3"
+        android:paddingLeft="30dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bluebutton"
+            android:text="Check"
+            android:textSize="20sp"
+            android:textColor="#faf9f9"
+            android:id="@+id/btnValidateNo"
+            android:textAlignment="center"
+            android:paddingRight="10dp"
+            android:layout_weight="0.09" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInValidateMsg"
+        android:textColor="#f46d6d"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:text="Please Enter Valid Mobile No :\n"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+</RelativeLayout>
