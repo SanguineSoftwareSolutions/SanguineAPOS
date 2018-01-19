@@ -359,19 +359,22 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
             JsonObject jObjBillTxaDtl = new JsonObject();
 
 
-            for (int l = 0; l < arrListMakeBillTaxDtls.size(); l++) {
-                clsTaxCalculationDtls objTaxDtl = (clsTaxCalculationDtls) arrListMakeBillTaxDtls.get(l);
+            for (int l = 0; l < arrListMakeBillItemDtls.size(); l++) {
+                clsMakeBillItemDtls objMakeBillItemBean = (clsMakeBillItemDtls) arrListMakeBillItemDtls.get(l);
 
                 JsonObject mJsonObjectBillTaxDtl = new JsonObject();
+
                 mJsonObjectBillTaxDtl.addProperty("BillNo", billNo);
-                mJsonObjectBillTaxDtl.addProperty("TaxCode", objTaxDtl.getTaxCode());
-                mJsonObjectBillTaxDtl.addProperty("TaxableAmount", objTaxDtl.getTaxableAmount());
-                mJsonObjectBillTaxDtl.addProperty("TaxAmount", objTaxDtl.getTaxAmount());
-                mJsonObjectBillTaxDtl.addProperty("ClientCode", clsGlobalFunctions.gClientCode);
-                mJsonObjectBillTaxDtl.addProperty("DataPostFlag", "N");
+                mJsonObjectBillTaxDtl.addProperty("POSCode",clsGlobalFunctions.gPOSCode);
+                mJsonObjectBillTaxDtl.addProperty("ItemCode",objMakeBillItemBean.getStrItemCode());
+                mJsonObjectBillTaxDtl.addProperty("ItemName",objMakeBillItemBean.getStrItemName());
+                mJsonObjectBillTaxDtl.addProperty("Quantity",objMakeBillItemBean.getDblQuantity());
+                mJsonObjectBillTaxDtl.addProperty("Amount",objMakeBillItemBean.getDblAmount());
+                mJsonObjectBillTaxDtl.addProperty("ClientCode",clsGlobalFunctions.gClientCode);
                 mJsonObjectBillTaxDtl.addProperty("BillDate", clsGlobalFunctions.funGetPOSDateTime());
 
                 mJsonArrBillTaxDtl.add(mJsonObjectBillTaxDtl);
+
             }
             //jObjBillTxaDtl.add("BillTaxDtl", mJsonArrBillTaxDtl);
             //funSaveBill(jObjBillTxaDtl);
@@ -626,7 +629,9 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
                         dismissDialog();
                         if (null != jObj) {
                             try {
-
+                                subTotalAmt=0;
+                                taxTotalAmt=0;
+                                discTotalAmt=0;
                                 ArrayList arrListItemDtl=new ArrayList();
                                 JsonArray mJsonArray = (JsonArray) jObj.get("BillItemDetails");
                                 JsonObject mJsonObject = new JsonObject();
@@ -801,11 +806,11 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
                             {
                                 billNo=entry.getValue();
                             }
-
+                            Toast.makeText(clsMakeBillScreen.mActivity, "BillNo=" + billNo, Toast.LENGTH_LONG).show();
                             funSaveBill();
 
                             /*
-                            Toast.makeText(clsMakeBillScreen.mActivity, "BillNo=" + billNo, Toast.LENGTH_LONG).show();
+
                             funInsertBillHd(billNo, cardNo);
                             if(null!=arrListMakeBillTaxDtls)
                             {
@@ -841,65 +846,6 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
             SnackBarUtils.showSnackBar(clsMakeBillScreen.mActivity, "No internet available or not connected to any network");
         }
     }
-
-
-/*
-    private void funSaveBill() {
-        if (!StringUtils.isEmpty(clsGlobalFunctions.gAPOSWebSrviceURL)) {
-            if (ConnectivityHelper.isConnected())
-            {
-                JsonObject jsonSendData=new JsonObject();
-                showDialog();
-                App.getAPIHelper().funSaveBill(jsonSendData,clsGlobalFunctions.gEnableBillSeries,clsGlobalFunctions.gPOSCode, new BaseAPIHelper.OnRequestComplete<HashMap>() {
-                    @Override
-                    public void onSuccess(HashMap map) {
-                        dismissDialog();
-                        if (null != map)
-                        {
-                            try
-                            {
-                                String response="";
-                                HashMap<String,String> hmBill= map;
-                                String cardNo ="";
-                                for (Map.Entry<String, String> entry : hmBill.entrySet())
-                                {
-                                    response=entry.getValue();
-                                }
-
-                                if (response.equals("BillDtl"))
-                                {
-                                    funGenerateBillTextFile(billNo);
-                                    billNo = "";
-                                    funClearObjects();
-                                    funResetFields();
-                                    System.out.println(response);
-                                    funLoadMakeBillTable();
-
-                                }
-
-                            }
-                            catch (Exception e)
-                            {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(String errorMessage, int errorCode) {
-                        dismissDialog();
-                    }
-                });
-
-
-            } else {
-                SnackBarUtils.showSnackBar(clsMakeBillScreen.mActivity, R.string.no_internet_connection);
-            }
-        } else {
-            SnackBarUtils.showSnackBar(clsMakeBillScreen.mActivity, R.string.setup_your_server_settings);
-        }
-    }
-*/
 
     public void funGenerateBillTextFileWebService(String billNumber) {
         if (!StringUtils.isEmpty(clsGlobalFunctions.gAPOSWebSrviceURL)) {
@@ -1259,7 +1205,7 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
                             {
                                 List listResponse=(List)mapResponse.get("response");
                                 String response="";
-                                intNoOfBills=listResponse.size();
+                               // intNoOfBills=listResponse.size();
                                 for(int i=0;i<listResponse.size();i++){
                                     LinkedTreeMap<String,String> hmBill= (LinkedTreeMap<String, String>) listResponse.get(i);
                                     String cardNo ="";
@@ -1345,9 +1291,10 @@ public class clsMakeBillLoadListFragment extends Fragment implements clsMakeBill
 
             // Bill header level details
             sbPrintBill.append(objPrint.funGetStringWithAlignment("Bill No : " + jObjBillHd.get("BillNo").getAsString(), "Left", 20));
-            String billDate = jObjBillHd.get("BillDate").getAsString();
-            String []arrBillDate=billDate.split(" ");
-            sbPrintBill.append(objPrint.funGetStringWithAlignment("Date : " + arrBillDate[0], "Left", 20));
+            String billDateTime = jObjBillHd.get("BillDate").getAsString();
+            String billDate=billDateTime.split(" ")[0];
+            String bdate=billDate.split("-")[2]+"-"+billDate.split("-")[1]+"-"+billDate.split("-")[0];
+            sbPrintBill.append(objPrint.funGetStringWithAlignment("Date : " + bdate, "Left", 20));
             sbPrintBill.append("\n");
             String tableName=jObjBillHd.get("Table").getAsString();
             if(!tableName.isEmpty())

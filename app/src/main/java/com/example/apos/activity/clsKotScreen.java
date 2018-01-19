@@ -1107,7 +1107,7 @@ public class clsKotScreen extends ActionBarActivity implements View.OnClickListe
 			sbPrintKot.append(objPrint.funGetStringWithAlignment(PaxNo, "Left", 7));
 			sbPrintKot.append("\n");
 			sbPrintKot.append(objPrint.funGetStringWithAlignment("DATE:", "Left", 13));
-			sbPrintKot.append(objPrint.funGetStringWithAlignment(objGlobal.funGetCurrentDate(), "Left", 27));
+			sbPrintKot.append(objPrint.funGetStringWithAlignment(objGlobal.gPOSDateHeader, "Left", 27));
 			sbPrintKot.append("\n");
 			sbPrintKot.append("----------------------------------------");
 			sbPrintKot.append("\n");

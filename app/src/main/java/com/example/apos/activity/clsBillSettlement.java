@@ -142,7 +142,7 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
     private TreeMap hmReason;
     private ArrayList<String> reasonList;
     GridView settleGridView;
-    int intNoOfBills=1;
+    int intNoOfBills=0;
     //HashMap<String,List<clsBillSeriesItemDtl>> mapBillSeriesData;
 
     @Override
@@ -689,6 +689,11 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                     if(printBillOnAfterSettleYN.equals("Y"))
                     {
                         funGenerateAndPrintTextfile(bill);
+                    }else{
+                        intNoOfBills--;
+                        if(intNoOfBills==0){
+                            finish();
+                        }
                     }
                 }
             }
@@ -1968,31 +1973,7 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                     arrTaxDtl.add(objRows);
 
                 }
-                objTaxDtl.add("InsertTaxDtl", arrTaxDtl);
-                /*App.getAPIHelper().funInsertBillTaxDtl(objTaxDtl, new BaseAPIHelper.OnRequestComplete<HashMap>() {
-                    @Override
-                    public void onSuccess(HashMap map) {
-                        dismissDialog();
-                        if (null != map)
-                        {
-                            try
-                            {
-                                String response="";
-                            }
-                            catch (Exception e)
-                            {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
 
-                    @Override
-                    public void onFailure(String errorMessage, int errorCode) {
-                        dismissDialog();
-                    }
-                });
-
-*/
             } else {
                 SnackBarUtils.showSnackBar(mActivity, R.string.no_internet_connection);
             }
@@ -2065,12 +2046,21 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                             {
                                 List listResponse=(List)mapResponse.get("response");
                                 String response="";
-                                intNoOfBills=listResponse.size();
+                               // intNoOfBills=listResponse.size();
+
                                 for(int i=0;i<listResponse.size();i++){
                                     LinkedTreeMap<String,String> hmBill= (LinkedTreeMap<String, String>) listResponse.get(i);;
                                     String cardNo ="";
                                     for (Map.Entry<String, String> entry : hmBill.entrySet())
                                     {
+                                        if(formName.equalsIgnoreCase("Make Bill")){
+                                            intNoOfBills=1;
+                                        }else{
+                                            if(entry.getKey().equals("BillHDData")){
+                                                intNoOfBills++;
+                                            }
+                                        }
+
                                         if(entry.getKey().equals("NoBillSeries")){
                                             Toast.makeText(mActivity, "Please Create Bill Series", Toast.LENGTH_SHORT).show();
                                             return ;
@@ -2209,6 +2199,10 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                                 if(formName.equalsIgnoreCase("Make Bill")){
                                     finish();
                                 }
+                                intNoOfBills--;
+                                if(intNoOfBills==0) {
+                                    finish();
+                                }
                             }
                             catch (Exception e)
                             {
@@ -2236,15 +2230,6 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
     private void funGenerateAndPrintTextfile(final String bill)
     {
 
-//        if(clsGlobalFunctions.gBillPrinterType.equalsIgnoreCase("External Printer"))// External Printer Type
-//        {
-//            funGenerateBillTextFileWebService(bill);
-//        }
-//        else
-//        {
-//            funPrintBillDataFromWS(bill);
-//        }
-
         AlertDialog.Builder builder1 = new AlertDialog.Builder(clsBillSettlement.this);
         builder1.setMessage("Do You Want To Print Bill???");
         builder1.setCancelable(true);
@@ -2259,10 +2244,7 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                         {
                             funPrintBillDataFromWS(bill);
                         }
-                        intNoOfBills--;
-                        if(intNoOfBills==0){
-                            finish();
-                        }
+                        /**/
                     }
                 }
         );
@@ -3195,6 +3177,10 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
                                 if(formName.equals("Make Bill")){
                                       finish();
                                 }
+                                intNoOfBills--;
+                                if(intNoOfBills==0) {
+                                    finish();
+                                }
 
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -3303,9 +3289,10 @@ public class clsBillSettlement extends Activity implements clsPOSSettlementAdapt
 
             // Bill header level details
             sbPrintBill.append(objPrint.funGetStringWithAlignment("Bill No : " + jObjBillHd.get("BillNo").getAsString(), "Left", 20));
-            String billDate = jObjBillHd.get("BillDate").getAsString();
-            String []arrBillDate=billDate.split(" ");
-            sbPrintBill.append(objPrint.funGetStringWithAlignment("Date : " + arrBillDate[0], "Left", 20));
+            String billDateTime = jObjBillHd.get("BillDate").getAsString();
+            String billDate=billDateTime.split(" ")[0];
+            String bdate=billDate.split("-")[2]+"-"+billDate.split("-")[1]+"-"+billDate.split("-")[0];
+            sbPrintBill.append(objPrint.funGetStringWithAlignment("Date : " + bdate, "Left", 20));
             sbPrintBill.append("\n");
             String tableName=jObjBillHd.get("Table").getAsString();
             if(!tableName.isEmpty())

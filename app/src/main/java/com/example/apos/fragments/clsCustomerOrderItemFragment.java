@@ -953,6 +953,11 @@ public class clsCustomerOrderItemFragment  extends Fragment implements clsKotIte
                     }
                 }
 
+               // jObjBillDtl.add("BillDtlInfo", mJsonArrBillDtl);
+
+                //new SaveBill().execute(jObjBillDtl);
+                //new clsCustomerOrderItemFragment().funSaveBill(jObjBillDtl);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

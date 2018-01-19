@@ -209,8 +209,8 @@ public class clsLoadVoidKot extends Fragment implements clsVoidKotItemListListen
                 }
                 else
                 {
-                    funSelectReasonAndRemark();
-                    funVoidKOTWS(KOTNo,"FullVoid"); // call after open reason dialog
+                    funSelectReasonAndRemark("FullVoid");
+                    //funVoidKOTWS(KOTNo,"FullVoid"); // call after open reason dialog
                 }
 
                 break;
@@ -267,7 +267,7 @@ public class clsLoadVoidKot extends Fragment implements clsVoidKotItemListListen
         builder1.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id)
                     {
-                        funSelectReasonAndRemark();
+                        funSelectReasonAndRemark("");
                     }
                 }
         );
@@ -733,7 +733,7 @@ public class clsLoadVoidKot extends Fragment implements clsVoidKotItemListListen
     }
 
 
-     private void funSelectReasonAndRemark()
+     private void funSelectReasonAndRemark(final String strFullVoid)
      {
          final Dialog dialog = new Dialog(clsVoidKotScreen.mActivity);
          dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -769,7 +769,10 @@ public class clsLoadVoidKot extends Fragment implements clsVoidKotItemListListen
                             e.printStackTrace();
                      }
                  }
-                 //funVoidKOTWS(KOTNo,"FullVoid");
+                 if(strFullVoid.equals("FullVoid")){
+                     funVoidKOTWS(KOTNo,"FullVoid");
+                 }
+
                  dialog.dismiss();
 
              }
@@ -780,7 +783,9 @@ public class clsLoadVoidKot extends Fragment implements clsVoidKotItemListListen
              public void onClick(View v)
              {
                  CommonUtils.hideKeyboard(edtRemark);
-                 //funVoidKOTWS(KOTNo,"FullVoid");
+                 if(strFullVoid.equals("FullVoid")){
+                     funVoidKOTWS(KOTNo,"FullVoid");
+                 }
                  dialog.dismiss();
              }
          });

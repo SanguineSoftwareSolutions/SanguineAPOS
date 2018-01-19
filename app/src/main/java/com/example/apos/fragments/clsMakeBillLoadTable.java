@@ -104,7 +104,7 @@ public class clsMakeBillLoadTable extends Fragment implements clsMakeBillTableLi
                 App.getAPIHelper().funGetBusyTableList(clsGlobalFunctions.gPOSCode, clsGlobalFunctions.gCMSIntegrationYN, clsGlobalFunctions.gTreatMemberAsTable, new BaseAPIHelper.OnRequestComplete<ArrayList<clsTableMaster>>() {
                     @Override
                     public void onSuccess(ArrayList<clsTableMaster> arrListTemp) {
-
+                        dismissDialog();
                         if (null != arrListTemp) {
                             if (arrListTemp.size() > 0) {
                                 arrListMakeBillTableMaster=arrListTemp;
@@ -112,7 +112,7 @@ public class clsMakeBillLoadTable extends Fragment implements clsMakeBillTableLi
 
                             }
                         }
-                        dismissDialog();
+
                     }
 
                     @Override

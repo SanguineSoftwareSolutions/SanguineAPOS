@@ -12,6 +12,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.bewo.mach.tools.MACHServices;
@@ -48,7 +49,7 @@ import java.util.Locale;
 
 public class clsShowReservationList extends Activity implements clsReservationListAdapter.customButtonListener,View.OnClickListener
 {
-    private EditText edtFromDate,edtFromTime,edtToDate,edtToTime;
+    private TextView edtFromDate,edtFromTime,edtToDate,edtToTime;
     private Button btnExecute,btnCancel,btnReset;
     ImageView imgViewFromDate,imgViewFromTime,imgViewToDate,imgViewToTime;
     SimpleDateFormat sdf;
@@ -266,10 +267,10 @@ public class clsShowReservationList extends Activity implements clsReservationLi
         imgViewToDate=(ImageView) findViewById(R.id.imgViewToDate);
         imgViewFromTime=(ImageView) findViewById(R.id.imgViewFromTime);
         imgViewToTime=(ImageView) findViewById(R.id.imgViewToTime);
-        edtFromDate=(EditText) findViewById(R.id.edtFromDate);
-        edtFromTime=(EditText) findViewById(R.id.edtFromTime);
-        edtToDate=(EditText) findViewById(R.id.edtToDate);
-        edtToTime=(EditText) findViewById(R.id.edtToTime);
+        edtFromDate=(TextView) findViewById(R.id.edtFromDate);
+        edtFromTime=(TextView) findViewById(R.id.edtFromTime);
+        edtToDate=(TextView) findViewById(R.id.edtToDate);
+        edtToTime=(TextView) findViewById(R.id.edtToTime);
         btnExecute=(Button) findViewById(R.id.btnExecute);
         btnCancel=(Button) findViewById(R.id.btnCancel);
         btnReset=(Button) findViewById(R.id.btnReset);
